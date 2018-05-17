@@ -1,14 +1,14 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
   box-sizing: inherit;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 100%; /* this will be 16px on most browsers */
-  line-height: 1.5; /* this is a multiple of the font size (1.5 * 16px = 24px) */
+  font-size: 100%;
+  /* this will be 16px on most browsers */
+  line-height: 1.5;
+  /* this is a multiple of the font size (1.5 * 16px = 24px) */
 }
 
 body {
@@ -29,18 +29,29 @@ body {
 
 .red {
   background-color: pink;
+  position: absolute;
+  right: 100px;
 }
 
 .green {
   background-color: lightgreen;
+  position: absolute;
+  top: 50px;
+  right: 50%;
 }
 
 .blue {
   background-color: lightblue;
+  top: 50px;
+  position: relative;
+  left: 200px;
 }
 
 .orange {
   background-color: orange;
+  position: absolute;
+  top: 75%;
+  left: 25%;
 }
 
 .yellow {
