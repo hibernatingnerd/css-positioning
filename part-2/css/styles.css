@@ -1,8 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 html {
   box-sizing: inherit;
@@ -12,52 +7,52 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 2em;
 }
 
-img {
-  max-width: 25%;
-}
-
-figure {
-  margin: 0;
-}
-
-.film {
-  width: 50%;
-  margin: 50px auto;
-  overflow: hidden;
-  padding: 10px;
-  border: 1px solid lightgrey;
-  float: none;
+article {
+  padding: 12px;
+  overflow: auto;
+  border: 1px grey solid;
   position: relative;
 }
 
-.film-title {
-  font-size: 30px;
+img {
+  max-width: 100%;
+
 }
 
-.film-details {
-padding-left: 30%;
+article.film {
+  display: grid;
+  grid-template-columns: 0.6fr 1.2fr;
+
 }
 
 .film-poster {
-  float: left;
-  position: absolute;
-  padding-bottom: 5px;
-  width: 110%;
+  display: inline-block;
 }
 
-.action-like {
-position: relative;
-float: right;
-color: red;
+
+.action-like-other {
+  color: red;
+  z-index: 100;
+  position: absolute;
+  bottom: 14em;
+  right: 0;
+  diplay: inline-block;
 }
 
-.action-watch-later {
+div.action-watch-later {
   position: absolute;
-  float: left;
-  top: 10px;
-  left: 140px;
+  top: 40px;
+  left: 230px;
+  color: red;
+  z-index: 101;
+}
+
+div.action-like {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
   color: red;
 }
